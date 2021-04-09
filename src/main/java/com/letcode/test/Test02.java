@@ -1,6 +1,7 @@
 package com.letcode.test;
 
 import com.letcode.java.Solution02;
+import com.letcode.java.Solution12;
 
 import java.io.*;
 import java.util.Scanner;
@@ -12,14 +13,16 @@ public class Test02 {
 //        int [] arg ={1,2,5,3};
 //        Solution02 solution02 = new Solution02();
 //        solution02.minMoves(arg);
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String s1 = bufferedReader.readLine();
-        String s2 = bufferedReader.readLine();
-        int i1 = parseInt(s1);
-        int i2 = parseInt(s2);
-        System.out.println(i1+i2);
-
-        int [] n ={1};
-        System.out.println(n.length);
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//        String s1 = bufferedReader.readLine();
+//        String s2 = bufferedReader.readLine();
+//        int i1 = parseInt(s1);
+//        int i2 = parseInt(s2);
+//        System.out.println(i1+i2);
+//
+//        int [] n ={1};
+//        System.out.println(n.length);
+        Solution12 solution12 = new Solution12();
+        solution12.isPalindrome(121);
     }
 }

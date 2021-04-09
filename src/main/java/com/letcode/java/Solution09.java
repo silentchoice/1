@@ -33,23 +33,23 @@ class Solution1 {
         int a = nums[0];
         if (nums.length <= 1) return a;
 
-        for (int i = 0, j = (nums.length - 1); i < j; i++, j--) {
+        for (int i = 0, j = (nums.length - 1); i <= j; i++, j--) {
 
 
             if (nums[i] <= nums[j]) {
                 if (nums[i] <= a) {
                     a = nums[i];
-                    if (i == j ||i + 1 == j) {
+                    if (i == j || i + 1 == j) {
                         return a;
                     } else {
-                        if (i == j ||i + 1 == j) {
+                        if (i == j | i + 1 == j) {
                             return a;
                         }
                     }
                 } else {
                     if (nums[j] <= a) {
                         a = nums[j];
-                        if (i == j ||i + 1 == j) {
+                        if (i == j | i + 1 == j) {
                             return a;
                         } else {
                             if (i + 1 == j) {
